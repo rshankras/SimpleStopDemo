@@ -395,6 +395,7 @@
 				48AAB06C197E2376007DD114 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		48AAB06D197E2376007DD114 /* Build configuration list for PBXNativeTarget "SimpleStopDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -403,6 +404,7 @@
 				48AAB06F197E2376007DD114 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

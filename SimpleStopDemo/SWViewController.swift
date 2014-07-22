@@ -10,7 +10,7 @@ import UIKit
 
 class SWViewController: UIViewController {
     
-    @IBOutlet var displayTimeLabel: UILabel
+    @IBOutlet var displayTimeLabel: UILabel!
     
     var startTime = NSTimeInterval()
     
