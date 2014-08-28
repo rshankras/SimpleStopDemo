@@ -14,7 +14,7 @@ class SWViewController: UIViewController {
     
     var startTime = NSTimeInterval()
     
-    var timer = NSTimer()
+    var timer:NSTimer = NSTimer()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +23,7 @@ class SWViewController: UIViewController {
     }
     
     @IBAction func start(sender: AnyObject) {
-        if !timer.valid {
+        if (!timer.valid) {
             let aSelector : Selector = "updateTime"
             timer = NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: aSelector, userInfo: nil, repeats: true)
             startTime = NSDate.timeIntervalSinceReferenceDate()
@@ -32,7 +32,6 @@ class SWViewController: UIViewController {
     
     @IBAction func stop(sender: AnyObject) {
         timer.invalidate()
-        timer == nil
     }
     
     func updateTime() {
