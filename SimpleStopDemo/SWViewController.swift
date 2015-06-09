@@ -52,9 +52,10 @@ class SWViewController: UIViewController {
         let fraction = UInt8(elapsedTime * 100)
         
         //add the leading zero for minutes, seconds and millseconds and store them as string constants
-        let strMinutes = minutes > 9 ? String(minutes):"0" + String(minutes)
-        let strSeconds = seconds > 9 ? String(seconds):"0" + String(seconds)
-        let strFraction = fraction > 9 ? String(fraction):"0" + String(fraction)
+        
+        let strMinutes = minutes > 9 ? String(minutes): String(format: "%02d", minutes)
+        let strSeconds = seconds > 9 ? String(seconds): String(format: "%02d", seconds)
+        let strFraction = fraction > 9 ? String(fraction):String(format: "%02d", fraction)
         
         //concatenate minuets, seconds and milliseconds as assign it to the UILabel
         displayTimeLabel.text = "\(strMinutes):\(strSeconds):\(strFraction)"
